@@ -116,7 +116,8 @@ body {
 
 .content {
     margin: 0 auto;
-    width: 720px;
+    width: 94%;
+    max-width: 720px;
     background-color: rgba(240, 240, 240,0.7);
     padding: 2px 10px;
 }
