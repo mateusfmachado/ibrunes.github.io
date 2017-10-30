@@ -86,7 +86,7 @@ body {
     background-image: url('../img/banner-1.png');
     background-size: cover;
 }
-.header > .info {
+.header > .info-desk {
     float: right;
     margin: 10px;
     border-radius: 30px;
@@ -97,9 +97,31 @@ body {
 
     padding: 20px 40px;
 }
-.header > .info > div > div {
+.header > .info-desk > div > div {
     margin: 10px 0;
     font-size: 1.2rem;
+}
+@media screen and (max-width: 720px){
+    .header > .info-desk {
+        display: none;
+    }
+}
+
+.info-mob {
+    display: none;
+    background-color: #5272a9;
+    width: calc(100% - 80px);
+    height: 250px;
+    padding: 20px 40px;
+}
+.info-mob > div > div {
+    margin: 10px 0;
+    font-size: 1.2rem;
+}
+@media screen and (max-width: 720px){
+    .info-mob {
+        display: block;
+    }
 }
 
 .titulo-page {
