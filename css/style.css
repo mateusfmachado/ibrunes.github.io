@@ -12,6 +12,10 @@ body {
     background-color: #b35161;
 }
 
+a{
+    text-decoration: none;
+}
+
 * {
     font-family: Helvetica;
     font-weight: 200;
