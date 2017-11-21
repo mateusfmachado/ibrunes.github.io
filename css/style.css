@@ -145,6 +145,41 @@ hr {
     font-size: 1.9rem;
 }
 
+.titulo-container-bg {
+    background-color: #00ba7c;
+    width: calc(100%);
+}
+
+.titulo-container {
+    background-color: #00ba7c;
+    color: #272727;
+    font-size: 1.2em;
+
+    width: calc(100% - 20px);
+    max-width: 1280px;
+    padding: 0 10px;
+
+    margin: 0 auto;
+}
+
+.titulo-container > a > h2 {
+    font-family: 'cmm';
+    color: #272727;
+    font-size: 1.9rem;
+    padding: 5px 10px 10px 10px;
+    margin: 20px 2px;
+    border-radius: 10px;
+}
+.titulo-container > a > h2:hover, .titulo-container > a > .atual {
+    background-color: #83f7d0;
+}
+@media screen and (max-width: 1024px){
+    .titulo-container > a > h2 {
+        margin: 7px 2px;
+        padding: 5px 10px 10px 10px;
+    }
+}
+
 .content {
     margin: 0 auto;
     width: 94%;
