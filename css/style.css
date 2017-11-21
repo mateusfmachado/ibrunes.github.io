@@ -1,6 +1,6 @@
 @font-face {
-    font-family: 'cmm';
-    src: url('cmm.ttf');
+    font-family: 'bn';
+    src: url('bn.otf');
 }
 
 /* GERAL */
@@ -141,7 +141,7 @@ hr {
     padding: 5px 0;    
 }
 .titulo-page > h2 {
-    font-family: 'cmm';
+    font-family: 'bn';
     font-size: 1.9rem;
 }
 
@@ -163,10 +163,10 @@ hr {
 }
 
 .titulo-container > a > h2 {
-    font-family: 'cmm';
+    font-family: 'bn';
     color: #272727;
     font-size: 1.9rem;
-    padding: 5px 10px 10px 10px;
+    padding: 5px 10px;
     margin: 20px 2px;
     border-radius: 10px;
 }
@@ -176,7 +176,7 @@ hr {
 @media screen and (max-width: 1024px){
     .titulo-container > a > h2 {
         margin: 7px 2px;
-        padding: 5px 10px 10px 10px;
+        padding: 5px 10px;
     }
 }
 
@@ -190,7 +190,7 @@ hr {
 
 .content > h3 {
     font-size: 1.7em;
-    font-family: 'cmm';
+    font-family: 'bn';
     margin-top: 0;
     color: #fefefe;
 }
