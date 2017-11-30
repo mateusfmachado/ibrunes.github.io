@@ -180,6 +180,27 @@ hr {
     }
 }
 
+.text-center {
+    text-align: center;
+}
+
+.div-block {
+    display: block;
+    width: 100%;
+}
+
+.container-white {
+    background-color: #FEFEFE;
+    padding: 20px 30px;
+    border-radius: 10px;
+}
+@media screen and (max-width: 720px){
+    .container-white {
+        border-radius: 0px;
+        margin: 0 -12px;        
+    }
+}
+
 .content {
     margin: 0 auto;
     width: 94%;
@@ -200,5 +221,89 @@ hr {
     background-color: rgb(30, 30, 30);
     color: #DEDEDE;
     font-size: 0.75em;
+}
+
+/*FONT BN*/
+
+.titulo-bn {
+    font-family: 'bn';
+    font-size: 2rem;
+}
+
+.paragraph-bn {
+    font-family: 'bn';
+    font-size: 1.4rem;
+}
+
+/*FORM*/
+.form-group {
+    /*margin: 10px 0;*/
+    width: 100%;
+}
+.form-group > label {
+    font-weight: 500;
+    margin: 15px 0;
+    font-family: 'bn';
+    font-size: 1.3rem;
+}
+.form-group > textarea {
+    resize: none;
+    width: 100%;
+    border: 1px solid #222;
+    font-size: 1rem;
+    padding: 8px 10px;
+    margin: 8px 0;
+    font-family: 'bn';
+    color: #474747;
+}
+.form-group > input {
+    background-color: #fefefe;
+    border-radius: 0px;
+    border: 1px solid #222;
+    width: 100%;
+    font-size: 1rem;
+    padding: 8px 10px;
+    margin: 8px 0;
+    font-family: 'bn';
+    color: #474747;
+}
+
+.form-contact {
+    width: 80%;
+    margin: 0 auto;    
+    font-family: 'bn';
+}
+
+.result-form {
+    color: #111;
+    font-size: 1.1rem;
+}
+
+.button-submit {
+    float: right;
+    background-color: #00ba7c;
+    padding: 10px 25px;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    border: 0px;
+    cursor: pointer;
+    font-family: 'bn';
+    transition: 0.2s all;
+}
+
+.button-submit:hover {
+    background-color: #00ab66;
+}
+
+/*JUSTIFY*/
+
+.justify {
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+/*TEST*/
+.border-test {
+    border: 2px solid red;
 }
 
