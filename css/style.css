@@ -302,6 +302,12 @@ hr {
     text-justify: inter-word;
 }
 
+/* STYLE FONT */
+
+strong {
+    font-weight: bolder;
+}
+
 /*TEST*/
 .border-test {
     border: 2px solid red;

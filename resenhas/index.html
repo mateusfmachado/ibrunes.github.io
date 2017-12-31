@@ -99,55 +99,40 @@
     <div class="titulo-container-bg">
     <div class="titulo-container flex flex-center wrap">
         <a href="../diario"><h2 >Diário</h2></a>
-        <a href="../resenhas"><h2 >Resenhas</h2></a>
-        <a href="../fotografias"><h2 >Fotografias</h2></a>
+        <a href="#"><h2 class="atual" >Resenhas</h2></a>
+        <a href="../fotografias"><h2>Fotografias</h2></a>
         <a href="../"><h2 >Portfólio</h2></a></a>
         <a href="#"><h2 >Desenhos</h2></a>
         <a href="#"><h2 >Quem sou eu</h2></a>
-        <a href="#"><h2 class="atual" >Quem é você</h2></a>
+        <a href="../quemevoce"><h2>Quem é você</h2></a>
     </div>
     </div>
     <main class="content">
 
         <div class="container-white">            
             
-            <h2 class="text-center div-block titulo-bn">
-                OLÁ! SERÁ UM PRAZER FALAR COM VOCÊ!
+            <!-- <h2 class="text-center div-block titulo-bn">
+                RESENHA: BRIGHT
             </h2>
-            <p class="justify paragraph-bn">
-                SUGESTÕES, PEDIDOS, PARCERIAS OU DESABAFOS SERÃO "OUVIDOS" AQUI. OU SIMPLESMENTE UMA HISTÓRIA. SEJA O QUE FOR, ME MANDE UMA MENSAGEM. NÃO PRECISA SE IDENTIFICAR, A ESCOLHA É SUA.
-            </p>
+
+            <img 
+                src="../img/resenhas/bright-banner.png" 
+                alt="Banner de Bright" 
+                width="100%" />
+
+            <div>
+                <h4>Dados do Filme:</h4>
+                <span><strong>Ano:</strong> 2017</span><br />
+                <span><strong>Dirigido por:</strong> David Ayer</span><br />
+                <span><strong>Gênero:</strong> Suspense, fantasia, ação</span><br />
+                <span><strong>Nota:</strong> 9/10</span>
+            </div>
+
             <br />
-            
-            <form onsubmit="sendForm(event)" class="form-contact">
-                <div class="result-form"></div>
-                <br />
-                <input 
-                        type="hidden" 
-                        name="token"
-                        value="4b74e78a2d58688f145a41d033dab0ac" />
-                <div class="form-group">
-                    <label>NOME: </label>
-                    <br />
-                    <input type="text" name="data-nome" />
-                </div>
-                <div class="form-group">
-                    <label>E-MAIL: </label>
-                    <br />
-                    <input type="email" name="data-email" />
-                </div>
-                <div class="form-group">
-                    <label>MENSAGEM: </label><br />
-                    <textarea
-                        rows="8" name="data-mensagem" required ></textarea> 
-                </div>
-                <button
-                    type="submit"
-                    class="button-submit" >
-                    ENVIAR
-                </button>
-                <br /><br />
-            </form>
+            <hr />
+            <br /> -->
+
+
 
         </div>
 
@@ -155,38 +140,6 @@
     <footer class="footer flex flex-center">
         &copy;2017. Bruna Nunes.
     </footer>
-    <script type="text/javascript">
-        function sendForm(ev){
-            ev.preventDefault();
-
-            const result = document.querySelector('.result-form');
-            const content = {
-                token: ev.target['token'].value,
-                data: {
-                    nome: ev.target['data-nome'].value,
-                    email: ev.target['data-email'].value,
-                    mensagem: ev.target['data-mensagem'].value
-                }
-            };
-
-            const url = "https://backend.ampliee.com/send";
-            fetch(url, {
-                method : "POST",
-                headers: {
-                    'Accept': 'application/json, text/plain, */*',
-                    'Content-Type': 'application/json'
-                },
-                body: JSON.stringify( content )
-            }).then( response => {
-                if(response.status === 200){
-                    result.innerHTML = 'Obrigado por entrar em contato!';
-                } else if(response.status === 403 || response.status === 422 || response.status === 500){
-                    result.innerHTML = 'Ocorreu um erro! :( Tente novamente.';
-                }
-            });
-
-        }
-    </script>
     <script src="../js/main.js"></script>
 </body>
 </html>
