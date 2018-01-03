@@ -313,3 +313,67 @@ strong {
     border: 2px solid red;
 }
 
+
+/* RESENHAS */
+
+.resenha-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.resenha-header {
+    display: flex;
+    flex-direction: row;
+}
+@media screen and (max-width: 720px){
+    .resenha-header {
+        flex-direction: column;
+    }
+}
+
+.resenha-pic {
+    flex: 1;
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #222;
+}
+
+.resenha-descricao {
+    flex: 1;
+    padding: 20px;    
+}
+@media screen and (max-width: 720px){
+    .resenha-pic {
+        order: 2;
+    }
+    .resenha-descricao {
+        padding: 20px 0;
+        order: 1;
+    }
+    .resenha-descricao > h2 {
+        text-align: center;
+    }
+}
+
+.placar {
+    width: 70px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #999;
+}
+
+.placar-head, .placar-nota {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #c99929;
+    padding: 3px 5px;
+}
+
+.placar-nota {
+    font-size: 2.2rem;
+    background-color: #eee;
+}
+
